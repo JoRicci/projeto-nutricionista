@@ -1,0 +1,23 @@
+/* geral */
+@import url(geral.css);
+
+/* header */
+@import url(header.css);
+
+/* hero */
+@import url(hero.css);
+
+/* sobre */
+@import url(sobre.css);
+
+/* servicos */
+@import url(servicos.css);
+
+/* detalhes */
+@import url(detalhes.css);
+
+/* contato */
+@import url(contato.css);
+
+/* footer */
+@import url(footer.css);

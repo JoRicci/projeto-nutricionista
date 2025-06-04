@@ -1,0 +1,141 @@
+/* contato */
+
+section.contato {
+    padding: 120px 5%;
+    margin: 0 auto;
+    background-color: var(--cinza-claro);
+}
+
+section.contato .interface {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: center;
+    justify-items: center;
+    padding: 2rem;
+    gap: 100px;
+    text-align: center;
+    background-color: var(--verde-menta);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+}
+
+section.contato .interface .contato-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section.contato .interface .contato-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px 100px / 120px;
+    padding: 20px 50px;
+}
+
+section.contato .interface .contato-img h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: var(--fonte-titulo);
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+.btn {
+    margin-bottom: 50px;
+    padding: 0.75rem 2rem;
+    background-color: var(--verde-menta);
+    color: var(--preto-suave);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: .3s;
+    border: 2px solid var(--verde-escuro);
+    font-family: var(--fonte-texto);
+
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: var(--verde-escuro);
+    color: var(--cinza-claro);
+    box-shadow: var(--sombra-suave);
+}
+
+section.contato .interface .contato-box {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    text-align: left;
+    list-style: none;
+}
+
+section.contato .interface .contato-box li {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section.contato .interface .contato-box a {
+    text-decoration: none;
+    color: var(--preto-suave);
+    font-size: 1.3rem;
+    font-family: var(--fonte-texto);
+}
+
+section.contato .interface .contato-box a i:hover {
+    color: var(--verde-escuro);
+    transform: translateY(-10px);
+}
+
+section.contato .interface .contato-texto h3 {
+    font-size: 1.8rem;
+    font-family: var(--fonte-titulo);
+    font-weight: 300;
+    position: relative;
+}
+
+section.contato .interface .contato-texto h3::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--verde-escuro);
+    bottom: 0;
+    margin-top: 4px;
+    border-radius: 8px;
+}
+
+.interface .contato-box .bnt-social {
+    display: flex;
+    gap: 20px;
+}
+
+.interface .contato-box .bnt-social i {
+    font-size: 1.5rem;
+}
+
+
+@media (max-width:769px) {
+
+    section.contato {
+        padding: 80px 5%;
+    }
+
+    section.contato .interface {
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    section.contato .interface .contato-texto h3 {
+        font-size: 1.2rem;
+    }
+
+
+}

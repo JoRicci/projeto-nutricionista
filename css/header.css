@@ -1,0 +1,124 @@
+.background {
+    background-image: url(../imagens/backgroud.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+}
+
+.background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.089);
+    z-index: 1;
+    backdrop-filter: blur(1px)
+}
+
+
+
+/* header */
+
+.header {
+    padding: 10px 5%;
+    position: relative;
+    z-index: 3;
+}
+
+.header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 5%;
+    background-color: var(--verde-menta-claro);
+    backdrop-filter: blur(1px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
+    margin-top: -11px;
+    text-align: center;
+}
+
+.header .interface img {
+    max-width: 100%;
+    display: block;
+    width: 100px;
+    height: auto;
+}
+
+.header .interface .header-menu {
+    list-style: none;
+    padding: 5px;
+}
+
+
+.header .interface .header-menu li {
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.header .interface .header-menu li a {
+    text-decoration: none;
+    font-family: var(--fonte-texto);
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--preto-suave);
+    display: inline-block;
+    transition: .1s;
+}
+
+.header .interface .header-menu li a::after{
+    content:"";
+    display: block;
+    width:0%;
+    height: 3px;
+    background-color: var(--verde-escuro);
+    margin-top: 4px;
+    border-radius:var(--borda-arredondada);
+    transition: .3s;
+}
+
+.header .interface .header-menu li a:hover::after {
+    width: 100%;
+}
+
+.button {
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--fonte-texto);
+    font-size: 1.125rem;
+    padding: 10px 20px;
+    border-radius: var(--borda-arredondada);
+    transition: .3s;
+    background-color: transparent;
+    border: 2px solid var(--verde-escuro);
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: var(--verde-escuro);
+    color: var(--cinza-claro);
+    box-shadow: var(--sombra-suave);
+}
+
+@media (max-width:769px){
+
+    .background {
+    min-height: 90vh;
+}
+    .header .interface .header-menu{
+        display: none;
+    }
+    .header .interface {
+    flex-direction: row-reverse;
+
+}
+}

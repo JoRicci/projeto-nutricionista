@@ -1,0 +1,69 @@
+
+/* detalhes */
+
+.details {
+    padding: 80px 5%;
+    margin: 0 auto;
+}
+
+.details .interface {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.interface .datails-box {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.interface .datails-box h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5rem;
+    line-height: 1.44;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.interface p {
+    font-size: 1.5rem;
+    font-family: var(--fonte-texto);
+    line-height: 1.44;
+}
+
+.interface .details-img img {
+    display: inline-block;
+    width: 350px;
+     height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all 3s ease-in-out;
+}
+
+.interface .details-img img:hover {
+    transform: rotate(360deg);
+}
+
+.interface .details-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+@media (max-width:769px){
+    .interface .datails-box h3 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+.interface .datails-box {
+    padding: 0 1rem;
+}
+.interface p {
+    font-size: 1.3rem;
+}
+
+}

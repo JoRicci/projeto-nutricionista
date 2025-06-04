@@ -1,0 +1,102 @@
+/* sobre */
+
+section.sobre {
+    padding: 80px 5%;
+    position: relative;
+    z-index: 3;
+}
+
+section.sobre .interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+section.sobre .interface h3 {
+    display: inline-block;
+    background-color: #d1e7dd;
+    color: #0f5132;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 30px;
+    font-size:2rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+section.sobre .sobre-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    gap: 100px;
+    justify-items: center;
+}
+
+section.sobre .interface img {
+    max-width: 100%;
+     height: auto;
+    display: block;
+    border-radius: 30px 0 30px 0;
+    box-shadow: var(--sombra-suave);
+}
+
+.interface .sobre-text {
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 5%;
+}
+
+.interface .sobre-text h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 3rem;
+    font-weight: 400;
+    position: relative;
+}
+
+.interface .sobre-text h2::before {
+    content: "";
+    width: 400px;
+    height: 5px;
+    background-color: var(--verde-menta);
+    position: absolute;
+    bottom: 0;
+    border-radius: var(--borda-arredondada);
+}
+
+.interface .sobre-text p {
+    font-family: var(--fonte-texto);
+    font-size: 1.3rem;
+    line-height: 2;
+}
+
+@media (max-width: 319px){
+
+}
+
+@media (max-width:769px){
+
+    section.sobre .interface h3 {
+    padding: 12px;
+    font-size:1.5rem;
+}
+.interface .sobre-text h2 {
+    font-size: 2.5rem;
+}
+
+.interface .sobre-text h2::before {
+display: none;
+}
+
+
+.interface .sobre-text p {
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+.sobre-box .button{
+    font-size: 1rem;
+    padding:20px;
+}
+}
