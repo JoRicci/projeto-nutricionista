@@ -32,31 +32,28 @@ section.servicos .interface {
     gap: 50px;
 }
 
+.interface-box-title{
+    background-color: var(--verde-menta);
+    padding: 2rem;
+    border-radius: var(--borda-arredondada);
+    color: --preto-suave;
+    backdrop-filter: blur(1px);
+}
+
 section.servicos .interface .servicos-title {
     font-family: var(--fonte-titulo);
     font-size: 3rem;
     font-weight: 400;
     position: relative;
-    color: var(--cinza-claro);
     text-align: center;
 }
 
-.interface .servicos-title::before {
-    content: "";
-    position: absolute;
-    width: 850px;
-    height: 5px;
-    background-color: var(--verde-menta);
-    bottom: 0;
-    border-radius: var(--borda-arredondada);
-}
 
 section.servicos .interface .servicos-text {
     font-size: 1.5rem;
     font-family: var(--fonte-texto);
     line-height: 1.4;
     text-align: center;
-    color: var(--cinza-claro);
 }
 
 .interface .servicos-box {
@@ -116,6 +113,11 @@ section.servicos .interface img {
 }
 
 
+@media (max-width:360px){
+        section.servicos .interface .servicos-title {
+    font-size: 2rem;
+}
+
 @media (max-width:769px){
     section.servicos .interface .servicos-title {
     font-size: 2.5rem;
@@ -129,7 +131,7 @@ section.servicos .interface img {
 }
 
 .interface .servicos-box li {
-    padding:1rem;
+    padding:2rem 1rem;
     max-width: 100%;
     width: 40ch;
 }

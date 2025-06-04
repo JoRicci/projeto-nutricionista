@@ -2,7 +2,7 @@
 /* hero */
 
 section.hero {
-    padding: 40px 5%;
+    padding: 80px 5%;
     position: relative;
     z-index: 2;
 }
@@ -71,6 +71,7 @@ section.hero .interface {
 @media (max-width:769px){
     .hero-box {
     padding: 2rem 1rem;
+    margin-top: 0px;
 }
 
 .hero-box a{
