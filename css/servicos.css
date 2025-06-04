@@ -117,6 +117,7 @@ section.servicos .interface img {
         section.servicos .interface .servicos-title {
     font-size: 2rem;
 }
+}
 
 @media (max-width:769px){
     section.servicos .interface .servicos-title {
